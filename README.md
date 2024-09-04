@@ -11,10 +11,33 @@ This project demonstrates how to set up a CI/CD pipeline using AWS services, spe
 - Integration between Elastic Beanstalk and RDS
 
 ## Prerequisites
-- AWS account with appropriate permissions
-- AWS CLI installed and configured
-- Basic knowledge of AWS services (Elastic Beanstalk, RDS, CodePipeline)
-- Git installed (for code management)
+Before starting the project, ensure you have:
+- An AWS account with appropriate permissions
+- Basic knowledge of AWS services (Elastic Beanstalk, RDS, EC2, IAM)
+
+## Setup Steps
+
+### 1. IAM Role Configuration
+- Create an AWS IAM role for Elastic Beanstalk
+- Add necessary permissions to the role for Elastic Beanstalk operations
+
+### 2. Elastic Beanstalk Environment
+- Set up Elastic Beanstalk with EC2
+- Configure a load balancer to distribute incoming traffic
+- Set up an Auto Scaling group for EC2 instances
+
+### 3. Amazon RDS Setup
+- Create an RDS instance using the free tier option
+- Choose MariaDB as the database engine
+
+### 4. Security Group Configuration
+- Set up a security group to allow data flow from EC2 to RDS
+- Configure SSH access for EC2 instances
+
+### 5. Database Initialization
+- Download the SQL file from the repository
+- Connect to the EC2 instance via SSH
+- Import the SQL file into the RDS MariaDB instance
 
 ## Installation
 
