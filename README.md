@@ -14,6 +14,9 @@ This project demonstrates how to set up a CI/CD pipeline using AWS services, spe
 Before starting the project, ensure you have:
 - An AWS account with appropriate permissions
 - Basic knowledge of AWS services (Elastic Beanstalk, RDS, EC2, IAM)
+- JDK 18 or later
+- Maven 3.9 or later
+- MySQL 8 or later
 
 ## Setup Steps
 
