@@ -19,6 +19,9 @@ Before starting the project, ensure you have:
 - MySQL 8 or later
 
 ## Setup Steps
+Then look for the file :
+- /src/main/resources/accountsdb
+- accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server
 
 ### 1. IAM Role Configuration
 - Create an AWS IAM role for Elastic Beanstalk
